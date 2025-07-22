@@ -47,7 +47,7 @@
     <dependencies>
         <dependency>
             <groupId>dev.reuise</groupId>
-            <artifactId>reuise-web-core</artifactId>
+            <artifactId>reuise-core</artifactId>
             <version>${reuise.version}</version>
         </dependency>
     </dependencies>
