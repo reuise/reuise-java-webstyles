@@ -14,6 +14,19 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <reuise.version>0.7.4-beta</reuise.version>
     </properties>
+  <repositories>
+    <repository>
+      <id>github-reuise-core</id>
+      <url>https://maven.pkg.github.com/reuise/reuise-java-core</url>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>github-reuise-webstyles</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/reuise/reuise-java-webstyles</url>
+    </repository>
+  </distributionManagement>
     <build>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <outputDirectory>${basedir}/target/classes</outputDirectory>
