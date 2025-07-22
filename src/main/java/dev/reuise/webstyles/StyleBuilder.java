@@ -44,12 +44,12 @@ public class StyleBuilder {
         this.id = id;
     }
 
-    public StyleSheet addRule(String rule, State state) {
+    public Style addRule(String rule, State state) {
         StyleSheet styleSheet = getStyleSheet(state);
         return styleSheet.addRule(rule, state);
     }
 
-    public StyleSheet addRule(String rule) {
+    public Style addRule(String rule) {
         return addRule(rule, null);
     }
 

@@ -1,7 +1,7 @@
 package dev.reuise.webstyles;
 import dev.reuise.core.State;
 import java.util.Map;
-public interface StyleSheet {
+public interface StyleSheet extends Style {
     StyleSheet getAtRule(String atRule);
 
     StyleSheet getRule(String rule, State state);
