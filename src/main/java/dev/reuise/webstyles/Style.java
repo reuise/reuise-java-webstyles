@@ -236,6 +236,8 @@ public interface Style {
 
     static final StyleProperty MARGIN_TOP = new StyleProperty("margin-top", EnumSet.of(StyleProperty.DataType.LENGTH, StyleProperty.DataType.PERCENTAGE));
 
+    static final StyleProperty MASK = new StyleProperty("mask");
+
     static final StyleProperty MAX_HEIGHT = new StyleProperty("max-height", EnumSet.of(StyleProperty.DataType.LENGTH, StyleProperty.DataType.PERCENTAGE));
 
     static final StyleProperty MAX_WIDTH = new StyleProperty("max-width", EnumSet.of(StyleProperty.DataType.LENGTH, StyleProperty.DataType.PERCENTAGE));
@@ -1414,6 +1416,15 @@ public interface Style {
     Style setMarginTop(Object marginTop);
 
     Style setMarginTop(Object marginTop, boolean important);
+
+    /**
+     * https://developer.mozilla.org/docs/Web/CSS/mask
+     */
+    String getMask();
+
+    Style setMask(String mask);
+
+    Style setMask(String mask, boolean important);
 
     /**
      * https://developer.mozilla.org/docs/Web/CSS/max-height
