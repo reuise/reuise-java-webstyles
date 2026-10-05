@@ -238,6 +238,10 @@ public interface Style {
 
     static final StyleProperty MASK = new StyleProperty("mask");
 
+    static final StyleProperty MASK_IMAGE = new StyleProperty("mask-image");
+
+    static final StyleProperty MASK_SIZE = new StyleProperty("mask-size");
+
     static final StyleProperty MAX_HEIGHT = new StyleProperty("max-height", EnumSet.of(StyleProperty.DataType.LENGTH, StyleProperty.DataType.PERCENTAGE));
 
     static final StyleProperty MAX_WIDTH = new StyleProperty("max-width", EnumSet.of(StyleProperty.DataType.LENGTH, StyleProperty.DataType.PERCENTAGE));
@@ -1425,6 +1429,24 @@ public interface Style {
     Style setMask(String mask);
 
     Style setMask(String mask, boolean important);
+
+    /**
+     * https://developer.mozilla.org/docs/Web/CSS/mask-image
+     */
+    String getMaskImage();
+
+    Style setMaskImage(String maskImage);
+
+    Style setMaskImage(String maskImage, boolean important);
+
+    /**
+     * https://developer.mozilla.org/docs/Web/CSS/mask-size
+     */
+    String getMaskSize();
+
+    Style setMaskSize(String maskSize);
+
+    Style setMaskSize(String maskSize, boolean important);
 
     /**
      * https://developer.mozilla.org/docs/Web/CSS/max-height

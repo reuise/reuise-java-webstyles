@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.reuise</groupId>
     <artifactId>reuise-webstyles</artifactId>
-    <version>0.7.4-beta</version>
+    <version>0.8.0-beta</version>
     <name>Reuise WebStyles</name>
     <description></description>
     <packaging>jar</packaging>
@@ -12,7 +12,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <reuise.version>0.7.4-beta</reuise.version>
+        <reuise.version>0.8.0-beta</reuise.version>
     </properties>
   <repositories>
   <repository>
